@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -109,4 +109,61 @@ label.selected .progress::after{
 }
 label.selectAll :is(.percentage , .progress){
     display: block;
+} */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(79, 114, 189)
+}
+
+.main-container{
+    width: 100%;
+    max-width: 380px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+}
+.main-container header h1 {
+    font-family: "roboto","sans-serif";
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px;
+    padding: 10px;
+}
+
+.poll-container{
+    border: 2px solid rgb(194, 191, 191);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.percentage{
+    display: none;
+}
+progress{
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+
+.poll-container.selected{
+    border-color: rebeccapurple;
 }

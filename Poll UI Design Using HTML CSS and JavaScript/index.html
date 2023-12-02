@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <!-- <div class="wrapper">
       <header>Poll UI Design</header>
       <div class="poll-area">
         <label for="">
@@ -60,6 +60,55 @@
             </div>
             <div class="progress" style="--w:60;"></div>
         </label>
+      </div>
+    </div> -->
+
+
+    <div class="main-container">
+      <header>
+        <h1>Poll UI Design</h1>
+      </header>
+      <div class="poll-area">
+        <!-- poll 1 -->
+        <div class="poll-container">
+          <div class="row">
+            <div class="col">
+              <input type="radio" class="radiobutton">
+              <span class="text">HTML</span>
+            </div>
+            <div class="col">
+              <span class="percentage">30%</span>
+            </div>
+          </div>
+          <progress value="30" max="100"></progress>
+        </div>
+        <!-- poll 2 -->
+        <div class="poll-container">
+          <div class="row">
+            <div class="col">
+              <input type="radio" class="radiobutton">
+              <span class="text">CSS</span>
+            </div>
+            <div class="col">
+              <span class="percentage">40%</span>
+            </div>
+          </div>
+          <progress value="40" max="100"></progress>
+        </div>
+        <!-- poll 3 -->
+        <div class="poll-container">
+          <div class="row">
+            <div class="col">
+              <input type="radio" class="radiobutton">
+              <span class="text">JavaScript</span>
+            </div>
+            <div class="col">
+              <span class="percentage">50%</span>
+            </div>
+          </div>
+          <progress value="50" max="100"></progress>
+        </div>
+        </div>
       </div>
     </div>
 
